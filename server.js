@@ -12,5 +12,5 @@ app.use(cors());
 
 app.use("/api/news", require("./routes/newsRoutes"));
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Export Express API as a serverless function
+module.exports = app;
